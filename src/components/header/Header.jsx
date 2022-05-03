@@ -58,6 +58,7 @@ const Header = () => {
                                             <img className='logo-dark'  id="logo_header" src={logodark} srcSet={`${logodark2x}`} alt="nft-gaming" />
                                             <img className='logo-light'  id="logo_header" src={logoheader} srcSet={`${logoheader2x}`} alt="nft-gaming" />
                                         </Link>
+                                        <p className="sitename">EXPERIA VIEW</p>
                                     </div>
                                 </div>
                                 <div className="mobile-button" ref={btnToggle} onClick={menuToggle}><span></span></div>
@@ -102,7 +103,7 @@ const Header = () => {
                                         </div>
                                     </div>
                                     <div className="sc-btn-top mg-r-12" id="site-header">
-                                        <Link to="/wallet-connect" className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Wallet connect
+                                        <Link to="/connect" className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Connect
                                         </span></Link>
                                     </div>
 
