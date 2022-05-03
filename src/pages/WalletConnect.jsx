@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
+import { Col, Container, Row } from "react-bootstrap";
 
 import img1 from "../assets/images/icon/connect-1.png";
 import img2 from "../assets/images/icon/connect-2.png";
@@ -64,29 +65,31 @@ const WalletConnect = () => {
     fullName: "",
     email: "",
     password: "",
-    logged: false
+    logged: false,
   });
 
   const [userData, setUserData] = useState({
     fullName: "hershiser ponce",
     email: "hershiserponce@gmail.com",
     password: "hershiser123",
-    Address: "lkadkldajdjdaj4556654"
+    Address: "lkadkldajdjdaj4556654",
   });
 
-  const login = (e) =>{
+  const login = (e) => {
     e.preventDefault();
-    if(form.fullName === userData.fullName & form.email === userData.email & form.password === userData.password){
-       
-        setForm({
-            ...form,
-            logged:true
-        }
-        )
-        console.log("form.logged",form.logged);
+    if (
+      (form.fullName === userData.fullName) &
+      (form.email === userData.email) &
+      (form.password === userData.password)
+    ) {
+      setForm({
+        ...form,
+        logged: true,
+      });
+      console.log("form.logged", form.logged);
     }
-console.log("form.logged",form.logged);
-  }
+    console.log("form.logged", form.logged);
+  };
   return (
     <div>
       <Header />
@@ -113,9 +116,7 @@ console.log("form.logged",form.logged);
           </div>
         </div>
       </section>
-      <div className="tf-connect-wallet tf-section">
-        <div className="themesflat-container">
-          {/* <div className="row">
+      {/* <div className="row">
                         <div className="col-12">
                             <h2 className="tf-title-heading ct style-2 mg-bt-12">
                                 Connect Your Wallet
@@ -139,101 +140,102 @@ console.log("form.logged",form.logged);
                                 }
                             </div>  
                         </div>    
-                    </div>               */}
-          <div className="row">
-            <div className="col-6">
-                {
-                    form.logged === false ?
-              <img className="stylesImg" src={imgWallet}></img>
-              : <>
-              <h2>Wallet</h2>
+                    </div>      
+                           */}
+      <Container fluid>
+        <Row>
+          <Col sm={12} md={12} lg={6}>
+            {form.logged === false ? (
+              <div className="d-flex justify-content-center">
+                 <img className="stylesImg" src={imgWallet}></img>
+              </div>
+             
+            ) : (
+              <>
+                <h2>Wallet</h2>
 
-              <span>Address:{userData.Address}</span>
+                <span>Address:{userData.Address}</span>
 
-
-              <div className="sc-btn-top mg-r-12" id="site-header">
-              <Link to="#" className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>connect
-              </span></Link>
-          </div>
-
-          </>
-              }
-            </div>
-            <div className="col-6">
-              <div className="flat-form box-login-email">
-                <div className="box-title-login">
-                  <h5>Login with email</h5>
+                <div className="sc-btn-top mg-r-12" id="site-header">
+                  <Link
+                    to="#"
+                    className="sc-button header-slider style style-1 wallet fl-button pri-1"
+                  >
+                    <span>connect</span>
+                  </Link>
                 </div>
-
-                <div className="form-inner">
-                  <form onSubmit={login}  id="contactform">
-                    <input
-                      id="name"
-                      name="name"
+              </>
+            )}
+          </Col>
+          <Col sm={12} md={12} lg={6}>
+              <div className="box-title-login">
+                <h5>Login with email</h5>
+              </div>
+              <div className="form-inner">
+                <form onSubmit={login} id="contactform">
+                  <input
+                    id="name"
+                    name="name"
                     //   tabIndex="1"
                     //   aria-required="true"
-                      required
-                      type="text"
-                      placeholder="Your Full Name"
-
-                      onChange={({ target }) =>
+                    required
+                    type="text"
+                    placeholder="Your Full Name"
+                    onChange={({ target }) =>
                       setForm({
                         ...form,
                         fullName: target.value,
                       })
                     }
-                    />
-                    <input
-                      id="email"
-                      name="email"
+                  />
+                  <input
+                    id="email"
+                    name="email"
                     //   tabIndex="2"
                     //   aria-required="true"
-                      type="email"
-                      placeholder="Your Email Address"
-                      required
-
-                      onChange={({ target }) =>
+                    type="email"
+                    placeholder="Your Email Address"
+                    required
+                    onChange={({ target }) =>
                       setForm({
                         ...form,
                         email: target.value,
                       })
                     }
-                    />
-                    <input
-                      id="pass"
-                      name="pass"
+                  />
+                  <input
+                    id="pass"
+                    name="pass"
                     //   tabIndex="3"
                     //   aria-required="true"
-                      type="text"
-                      placeholder="Set Your Password"
-                      required
-
-                      onChange={({ target }) =>
+                    type="text"
+                    placeholder="Set Your Password"
+                    required
+                    onChange={({ target }) =>
                       setForm({
                         ...form,
                         password: target.value,
                       })
                     }
-                    />
-                    <div className="row-form style-1">
-                      <label>
-                        Remember me
-                        <input type="checkbox" />
-                        <span className="btn-checkbox"></span>
-                      </label>
-                      <Link to="#" className="forgot-pass">
-                        Forgot Password ?
-                      </Link>
-                    </div>
+                  />
+                  <div className="row-form style-1">
+                    <label>
+                      Remember me
+                      <input type="checkbox" />
+                      <span className="btn-checkbox"></span>
+                    </label>
+                    <Link to="#" className="forgot-pass">
+                      Forgot Password ?
+                    </Link>
+                  </div>
 
-                    <button  type="submit">Login</button>
-                  </form>
-                </div>
+                  <button type="submit">Login</button>
+                </form>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
+
       <Footer />
     </div>
   );

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { Tab, Tabs, TabList, TabPanel  } from 'react-tabs';
 import Countdown from "react-countdown";
 import CardModal from '../CardModal';
-import { Dropdown } from 'react-bootstrap';
 
 import img1 from '../../../assets/images/box-item/image-box-47.jpg'
 import imga1 from '../../../assets/images/avatar/author_rank.jpg'
@@ -56,10 +55,10 @@ const ItemContent = () => {
                         id: 1,
                         img: img1,
                         title: "Flame Dress' by Balmain... ",
-                        tags: "bsc",
+                        tags: "175 Copies",
                         imgAuthor: imga1,
                         nameAuthor: "Tyler Covington",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     {
@@ -69,7 +68,7 @@ const ItemContent = () => {
                         tags: "bsc",
                         imgAuthor: imga2,
                         nameAuthor: "Freddie Carpeter",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     {
@@ -79,7 +78,7 @@ const ItemContent = () => {
                         tags: "bsc",
                         imgAuthor: imga3,
                         nameAuthor: "Tyler Covington",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     {
@@ -89,7 +88,7 @@ const ItemContent = () => {
                         tags: "bsc",
                         imgAuthor: imga4,
                         nameAuthor: "Tyler Covington",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     {
@@ -99,7 +98,7 @@ const ItemContent = () => {
                         tags: "bsc",
                         imgAuthor: imga5,
                         nameAuthor: "Tyler Covington",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     {
@@ -109,7 +108,7 @@ const ItemContent = () => {
                         tags: "bsc",
                         imgAuthor: imga1,
                         nameAuthor: "Tyler Covington",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     {
@@ -119,7 +118,7 @@ const ItemContent = () => {
                         tags: "bsc",
                         imgAuthor: imga2,
                         nameAuthor: "Freddie Carpeter",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     {
@@ -129,7 +128,7 @@ const ItemContent = () => {
                         tags: "bsc",
                         imgAuthor: imga3,
                         nameAuthor: "Tyler Covington",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     {
@@ -139,7 +138,7 @@ const ItemContent = () => {
                         tags: "bsc",
                         imgAuthor: imga4,
                         nameAuthor: "Tyler Covington",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     {
@@ -149,7 +148,7 @@ const ItemContent = () => {
                         tags: "bsc",
                         imgAuthor: imga5,
                         nameAuthor: "Tyler Covington",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     {
@@ -159,7 +158,7 @@ const ItemContent = () => {
                         tags: "bsc",
                         imgAuthor: imga1,
                         nameAuthor: "Tyler Covington",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     {
@@ -169,7 +168,7 @@ const ItemContent = () => {
                         tags: "bsc",
                         imgAuthor: imga2,
                         nameAuthor: "Freddie Carpeter",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     {
@@ -179,7 +178,7 @@ const ItemContent = () => {
                         tags: "bsc",
                         imgAuthor: imga3,
                         nameAuthor: "Tyler Covington",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     {
@@ -189,7 +188,7 @@ const ItemContent = () => {
                         tags: "bsc",
                         imgAuthor: imga4,
                         nameAuthor: "Tyler Covington",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     {
@@ -199,7 +198,7 @@ const ItemContent = () => {
                         tags: "bsc",
                         imgAuthor: imga5,
                         nameAuthor: "Tyler Covington",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     {
@@ -209,7 +208,7 @@ const ItemContent = () => {
                         tags: "bsc",
                         imgAuthor: imga1,
                         nameAuthor: "Tyler Covington",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     {
@@ -219,7 +218,7 @@ const ItemContent = () => {
                         tags: "bsc",
                         imgAuthor: imga2,
                         nameAuthor: "Freddie Carpeter",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     {
@@ -229,7 +228,7 @@ const ItemContent = () => {
                         tags: "bsc",
                         imgAuthor: imga3,
                         nameAuthor: "Tyler Covington",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     {
@@ -239,7 +238,7 @@ const ItemContent = () => {
                         tags: "bsc",
                         imgAuthor: imga4,
                         nameAuthor: "Tyler Covington",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     {
@@ -249,7 +248,7 @@ const ItemContent = () => {
                         tags: "bsc",
                         imgAuthor: imga5,
                         nameAuthor: "Tyler Covington",
-                        price: "4.89 ETH",
+                        price: "4.89 FUSD",
                         wishlist: "100",
                     },
                     
@@ -638,7 +637,7 @@ const ItemContent = () => {
                                         </li>
                                     </ul>
 
-                                    <Dropdown>
+                                    {/* <Dropdown>
                                         <Dropdown.Toggle id="dropdown-basic" className='btn-sort-by dropdown'>
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M3 7H21" stroke="white" strokeWidth="1.5" strokeLinecap="round"></path>
@@ -660,7 +659,7 @@ const ItemContent = () => {
                                         </Dropdown.Item>
                                         </Dropdown.Menu>
                                     </Dropdown>
-                                    
+                                     */}
                                 </div>
                             </div>
                             
